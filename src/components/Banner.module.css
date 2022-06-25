@@ -1,0 +1,19 @@
+.message {
+  padding-top: 5vh;
+  width: 45%;
+  margin: auto;
+  color: #03DAC6;
+  text-align: left;
+}
+
+.message p {
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 767px){
+  .message {
+    width: 85%;
+  }
+}

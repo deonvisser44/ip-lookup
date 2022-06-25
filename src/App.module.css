@@ -1,0 +1,73 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 97vh;
+  padding-top: 3vh;
+  background-image: url('./Assets/background.svg');
+  background-size: cover;
+}
+
+h2 {
+  color: #03DAC6;
+  text-decoration: underline;
+  margin: 0.5rem;
+}
+
+.logo {
+  position: absolute;
+  left: 5%;
+  color: #03DAC6;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  background-color: #03DAC6;
+  color: white;
+  border-radius: 12px;
+  padding: 3px 0;
+  padding-right: 10px;
+}
+
+.logoSpan {
+  background-color: white;
+  border-radius: 12px;
+  padding: 3px 10px;
+  color: #03DAC6;
+}
+.content {
+  width: fit-content;
+  margin: auto;
+  margin-top: 8vh;
+}
+
+.infoAndMap {
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+}
+
+.headingAndInfo {
+  margin-top: 8vh;
+}
+
+@media screen and (max-width: 767px){
+  .logo {
+    position: relative;
+  }
+
+  .content {
+    margin-top: 3vh;
+  }
+
+  .headingAndInfo {
+    margin-top: 3vh;
+  }
+
+  .infoAndMap {
+    flex-direction: column;
+    width: 80vw;
+  }
+}
