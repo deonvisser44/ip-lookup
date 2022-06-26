@@ -4,7 +4,6 @@
   height: 400px;
   border: 3px solid #03DAC6;
   border-left: none;
-  border-radius: 0 12px 12px 0;
 }
 
 .noCoordsDiv {
@@ -23,14 +22,12 @@
 @media screen and (max-width: 767px){
   .mapComp {
     width: 100%;
-    border-radius: 0 0 12px 12px;
     border-left: 3px solid #03DAC6;
     margin-bottom: 1.5rem;
   }
 
   .noCoordsDiv {
     width: 100%;
-    border-radius: 0 0 12px 12px;
     border-left: 3px solid #03DAC6;
     margin-bottom: 1.5rem;
   }
