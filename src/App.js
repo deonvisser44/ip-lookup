@@ -51,6 +51,12 @@ function App() {
   };
 
   useEffect(() => {
+    if(searchIp.length === 0) {
+      setHasError(false)
+    }
+  }, [searchIp])
+
+  useEffect(() => {
     getUserIP();
   }, []);
 

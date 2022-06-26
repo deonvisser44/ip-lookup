@@ -1,41 +1,48 @@
 .searchForm {
   display: flex;
-  border: 2px solid #03DAC6;
   border-radius: 12px;
-  width: fit-content;
-  height: 2.2rem;
+  width: 20vw;
+  height: fit-content;
   margin: auto;
   margin-bottom: 2vh;
+  background-color: #03dac6;
 }
 
 .searchForm input {
-  width: 80%;
+  width: 85%;
+  height: 4.1vh;
   font-size: 1.5rem;
   outline: none;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px;
   border: none;
   padding-left: 10px;
 }
 
 .searchForm button {
-  height: 100%;
-  border: none;
-  background-color: #03DAC6;
+  height: 4.3vh;
+  width: fit-content;
+  border: 3px solid #03dac6;
+  background-color: #03dac6;
   color: white;
-  border-radius: 0 9px 9px 0;
-  font-size: 1.4rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
   font-weight: 200;
   padding: 0 10px;
   cursor: pointer;
 }
 
+.errorDiv {
+  margin: 0;
+  margin-bottom: 6vh;
+  height: 2rem;
+}
+
 .errorMessage {
   color: rgb(255, 88, 88);
   margin: 0;
-  margin-bottom: 6vh;
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .searchForm {
     width: 80vw;
   }

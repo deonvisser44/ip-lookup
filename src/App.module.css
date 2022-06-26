@@ -3,7 +3,7 @@
   background-color: #282c34;
   min-height: 97vh;
   padding-top: 3vh;
-  background-image: url('./Assets/background.svg');
+  background-image: url('./Assets/backgrounddots.png');
   background-size: cover;
 }
 
@@ -54,8 +54,18 @@ h2 {
 }
 
 @media screen and (max-width: 767px){
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   .logo {
     position: relative;
+    left: 12vw;
+    width: 90vw;
+    justify-self: center;
+    font-size: 1.3rem;
   }
 
   .content {
