@@ -12,7 +12,7 @@ function SearchBar(props) {
           onChange={props.handleInputChange}
         />
         <button>
-          <FaSearchLocation />
+          <FaSearchLocation className={classes.icon} />
         </button>
       </form>
       <div className={classes.errorDiv}>

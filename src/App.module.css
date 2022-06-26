@@ -26,16 +26,15 @@ h2 {
   background-color: #03DAC6;
   color: white;
   border-radius: 12px;
-  padding: 3px 0;
   padding-right: 10px;
 }
 
 .logoSpan {
   background-color: white;
   border-radius: 12px;
-  padding: 3px 10px;
   color: #03DAC6;
   height: 100%;
+  padding: 0 10px;
 }
 .content {
   width: fit-content;
@@ -63,14 +62,14 @@ h2 {
   }
   .logo {
     position: relative;
-    left: 12vw;
-    width: 90vw;
+    margin-left: 14%;
+    width: fit-content;
     justify-self: center;
     font-size: 1.3rem;
   }
 
   .content {
-    margin-top: 3vh;
+    margin-top: 2vh;
   }
 
   .headingAndInfo {

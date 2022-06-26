@@ -4,7 +4,6 @@ import SearchBar from "./components/SearchBar";
 import AddressInfo from "./components/AddressInfo";
 import MapComp from "./components/MapComp";
 import Banner from "./components/Banner";
-import { FaSearchLocation } from "react-icons/fa";
 
 function App() {
   const [searchResult, setSearchResult] = useState({});
@@ -65,7 +64,7 @@ function App() {
       <div className={classes.backgroundImg}></div>
       <div className={classes.logo}>
         <h1>
-          <span className={classes.logoSpan}>IP</span> LOOKUP <FaSearchLocation />
+          <span className={classes.logoSpan}>IP</span> LOOKUP
         </h1>
       </div>
       <div className={classes.content}>
