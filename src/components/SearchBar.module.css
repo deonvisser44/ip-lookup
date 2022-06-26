@@ -46,8 +46,7 @@
 
 .icon {
   margin: auto;
-  display: flex;
-  align-items: center;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 767px) {
