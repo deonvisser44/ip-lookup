@@ -35,6 +35,7 @@ h2 {
   border-radius: 12px;
   padding: 3px 10px;
   color: #03DAC6;
+  height: 100%;
 }
 .content {
   width: fit-content;
