@@ -25,12 +25,9 @@
   background-color: #03dac6;
   color: white;
   border-radius: 10px;
-  font-size: 1.2rem;
-  font-weight: 200;
+  font-size: 1.4rem;
   padding: 0 10px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 .errorDiv {
@@ -45,7 +42,6 @@
 }
 
 .icon {
-  margin: auto;
   vertical-align: middle;
 }
 
