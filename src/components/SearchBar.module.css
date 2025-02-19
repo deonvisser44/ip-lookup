@@ -11,7 +11,7 @@
 .searchForm input {
   width: 85%;
   height: 4.1vh;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   outline: none;
   border-radius: 10px;
   border: none;
@@ -52,5 +52,9 @@
 
   .errorDiv {
     margin-bottom: 0vh;
+  }
+
+  .searchForm input {
+    font-size: 1.2rem;
   }
 }

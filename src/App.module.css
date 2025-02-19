@@ -5,6 +5,7 @@
   padding-top: 3vh;
   background-image: url('./Assets/backgrounddots.png');
   background-size: cover;
+  padding-bottom: 3rem;
 }
 
 h2 {
@@ -14,12 +15,12 @@ h2 {
 }
 
 .logo {
-  position: absolute;
-  left: 5%;
   color: #03DAC6;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .logo h1 {
@@ -59,10 +60,9 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 3rem;
   }
   .logo {
-    position: relative;
-    margin-left: 14%;
     width: fit-content;
     justify-self: center;
     font-size: 1.3rem;
