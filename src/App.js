@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import classes from './App.module.css'
+import classes from "./App.module.css";
 import SearchBar from "./components/SearchBar";
 import AddressInfo from "./components/AddressInfo";
 import MapComp from "./components/MapComp";
@@ -19,14 +19,19 @@ function App() {
   };
 
   const getUserIP = () => {
-    fetch("http://ip.jsontest.com/")
-      .then((res) => res.json())
+    fetch("https://api.ipify.org?format=json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((data) => {
-        console.log(data.ip);
+        console.log("User IP:", data.ip);
         setSearchIp(data.ip);
         setDefaultIp(data.ip);
-        return data.ip;
-      });
+      })
+      .catch((err) => console.error("Failed to fetch IP:", err));
   };
 
   const getInputData = (e) => {
@@ -50,10 +55,10 @@ function App() {
   };
 
   useEffect(() => {
-    if(searchIp.length === 0) {
-      setHasError(false)
+    if (searchIp.length === 0) {
+      setHasError(false);
     }
-  }, [searchIp])
+  }, [searchIp]);
 
   useEffect(() => {
     getUserIP();
